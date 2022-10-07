@@ -1,6 +1,8 @@
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from core.views import front
 
 urlpatterns = [
-    path('', include('data.urls')),
+    path('admin/', admin.site.urls),
+    path('', front, name="front"),
 ]
