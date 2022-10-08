@@ -5,11 +5,11 @@ const Nav = () => {
 	const [navbar, setNavbar] = useState(false);
 
 	return (
-		<nav className="w-full bg-slate-200 shadow">
+		<nav className="w-full bg-slate-400 shadow md:px-12">
 			<div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
 				<div>
 					<div className="flex items-center justify-between py-3 md:py-5 md:block">
-						<h2 className="text-2xl text-slate-400 font-bold">Logo</h2>
+						<h2 className="text-2xl text-slate-300 font-bold">Logo</h2>
 						<div className="md:hidden">
 								<button
 										className="p-2 text-gray-700 rounded-md outline-none cursor-pointer"
@@ -53,10 +53,10 @@ const Nav = () => {
 									navbar ? "block" : "hidden"
 							}`}>
 						<ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-							<li className="text-gray-800 font-semibold bg-slate-300 p-2 hover:text-blue-600">
+							<li className="text-gray-800 font-semibold md:font-bold bg-slate-300 md:bg-slate-400 p-2 hover:text-gray-600">
 								<Link to="/" onClick={() => {setNavbar(false)}} >Home</Link>
 							</li>
-							<li className="text-gray-800 font-semibold bg-slate-300 p-2 hover:text-blue-600">
+							<li className="text-gray-800 font-semibold bg-slate-300 md:font-bold md:bg-slate-400 p-2 hover:text-gray-600">
 								<Link to="/list" onClick={() => {setNavbar(false)}}>List</Link>
 							</li>
 						</ul>
