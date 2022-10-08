@@ -20,7 +20,6 @@ export const searchCategories = createAsyncThunk('E-COMMERCE/PRODUCTS_BY_CATEGOR
 
 export const fetchList = createAsyncThunk('FETCH_LIST', async (value) => {
 	const response = await axios.get('http://localhost:8000/api/data')
-  console.log(response.data);
 	return response.data;
 })
 
